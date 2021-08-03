@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <title>Chat</title>
+  <link rel="stylesheet"
+    href="css/estilo.css">
+    <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js">
+    </script>
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="cmp/mi-nav.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-footer.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-progreso.js">
+    </script>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="usuarios.html">Usuarios</a></li>
+        <li><a href="alumnos.html">Alumnos</a></li>
+        <li><a href="oferta.html">Oferta educativa</a></li>
+        <li><a href="chat.html">Chat</a></li>
+        <li style="float:right"><a href="#about">Sesion</a></li>
+      </ul>
+  <mi-nav></mi-nav>
+  <form name="forma">
+    <header>
+      <h1>Chat</h1>
+      <div class="herramientas">
+        <input class="alum" name="texto"
+          required
+          placeholder="Mensaje">
+        <button  class="agregar">Enviar</button>
+      </div>
+    </header>
+    <ul id="lista" class="lista">
+      <li>
+        <mi-progreso>
+        </mi-progreso>
+      </li>
+    </ul>
+    <mi-footer></mi-footer>
+  </form>
+  <script type="module"
+    src="js/CtrlChat.js">
+    </script>
+</body>
+</html>

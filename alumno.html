@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <title>Alumno</title>
+  <link rel="stylesheet"
+    href="css/estilo.css">
+    <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js">
+    </script>
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="cmp/mi-nav.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-footer.js">
+    </script>
+</head>
+<body>
+  <form name="forma">
+    <mi-nav></mi-nav>
+    <header>
+      <h1>Alumno</h1>
+      <div class="herramientas">
+          <button class="agregar">
+        <a href="alumnos.html">
+          Cancelar</a></button>
+        <button class="agregar">Guardar</button>
+        <button class="agregar" name="eliminar"
+          type="button">
+          Eliminar
+        </button>
+      </div>
+    </header>
+    <p>
+      <label>
+        Matricula
+        <input class="alum" name="matricula"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Nombre
+        <input class="alum" name="nombre"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Teléfono
+        <input class="alum" name="telefono"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Grupo
+        <input class="alum" name="grupo"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Fecha
+        <input class="alum name="fecha" type="date" required>
+      </label>
+    </p>
+    <mi-footer></mi-footer>
+  </form>
+  <script type="module"
+  src="js/CtrlAlumno.js">
+  </script>
+</body>
+</html>
+
